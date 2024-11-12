@@ -1,0 +1,2 @@
+ssh -i "ds_ranjeet.pem" ubuntu@ec2-54-175-3-134.compute-1.amazonaws.com
+

@@ -1,0 +1,83 @@
+(siva) ai22mtech11001@aiganesh1:~/Siva/other$ python m123_training.py
+bottle
+cuda
+loading images
+loaded 209 images
+epoch [1/200], loss:405484453370888128.0000
+Pixel Auroc:0.555, Sample Auroc0.633, Pixel Aupro0.551
+epoch [2/200], loss:26658076171847.5703
+Pixel Auroc:0.567, Sample Auroc0.378, Pixel Aupro0.561
+epoch [3/200], loss:13919155309490.9238
+Pixel Auroc:0.584, Sample Auroc0.491, Pixel Aupro0.57
+epoch [4/200], loss:10162581266167.7422
+Pixel Auroc:0.596, Sample Auroc0.455, Pixel Aupro0.599
+epoch [5/200], loss:7655582754970.1504
+Pixel Auroc:0.584, Sample Auroc0.406, Pixel Aupro0.603
+epoch [6/200], loss:5802141848741.1611
+Pixel Auroc:0.607, Sample Auroc0.332, Pixel Aupro0.635
+epoch [7/200], loss:4522758401563.5273
+Pixel Auroc:0.641, Sample Auroc0.406, Pixel Aupro0.667
+epoch [8/200], loss:3694825559028.9893
+Pixel Auroc:0.663, Sample Auroc0.390, Pixel Aupro0.689
+epoch [9/200], loss:3071265760024.7744
+Pixel Auroc:0.691, Sample Auroc0.332, Pixel Aupro0.722
+epoch [10/200], loss:2629756305584.1719
+Pixel Auroc:0.743, Sample Auroc0.387, Pixel Aupro0.763
+epoch [11/200], loss:2204184725746.2363
+Pixel Auroc:0.753, Sample Auroc0.309, Pixel Aupro0.775
+epoch [12/200], loss:1854328669569.3765
+Pixel Auroc:0.774, Sample Auroc0.364, Pixel Aupro0.791
+epoch [13/200], loss:1536917914128.5161
+Pixel Auroc:0.788, Sample Auroc0.407, Pixel Aupro0.804
+epoch [14/200], loss:1327600443656.2581
+Pixel Auroc:0.752, Sample Auroc0.491, Pixel Aupro0.769
+epoch [15/200], loss:1139307694322.2366
+Pixel Auroc:0.765, Sample Auroc0.393, Pixel Aupro0.78
+epoch [16/200], loss:1007322433249.7205
+Pixel Auroc:0.718, Sample Auroc0.490, Pixel Aupro0.734
+epoch [17/200], loss:885207098136.7742
+Pixel Auroc:0.737, Sample Auroc0.443, Pixel Aupro0.753
+epoch [18/200], loss:745836550694.5376
+Pixel Auroc:0.752, Sample Auroc0.421, Pixel Aupro0.775
+epoch [19/200], loss:684519327457.7205
+Pixel Auroc:0.740, Sample Auroc0.440, Pixel Aupro0.752
+epoch [20/200], loss:626656906339.0968
+Pixel Auroc:0.717, Sample Auroc0.523, Pixel Aupro0.725
+epoch [21/200], loss:579412549720.0861
+Pixel Auroc:0.700, Sample Auroc0.437, Pixel Aupro0.711
+epoch [22/200], loss:504952583421.2473
+Pixel Auroc:0.735, Sample Auroc0.525, Pixel Aupro0.752
+epoch [23/200], loss:505376387820.7312
+Pixel Auroc:0.699, Sample Auroc0.482, Pixel Aupro0.709
+epoch [24/200], loss:461423861848.0860
+Pixel Auroc:0.736, Sample Auroc0.460, Pixel Aupro0.749
+epoch [25/200], loss:426197995828.3011
+Pixel Auroc:0.695, Sample Auroc0.563, Pixel Aupro0.708
+epoch [26/200], loss:396603451546.1505
+Pixel Auroc:0.677, Sample Auroc0.548, Pixel Aupro0.693
+epoch [27/200], loss:361423613291.3549
+Pixel Auroc:0.713, Sample Auroc0.414, Pixel Aupro0.725
+epoch [28/200], loss:326598296432.8602
+Pixel Auroc:0.663, Sample Auroc0.454, Pixel Aupro0.677
+epoch [29/200], loss:313703776079.8279
+Pixel Auroc:0.676, Sample Auroc0.482, Pixel Aupro0.696
+epoch [30/200], loss:615041882034366494801920.0000
+Pixel Auroc:0.600, Sample Auroc0.480, Pixel Aupro0.605
+epoch [31/200], loss:4039739964170442563911680.0000
+Pixel Auroc:0.591, Sample Auroc0.376, Pixel Aupro0.607
+epoch [32/200], loss:3953867463409552255352832.0000
+Pixel Auroc:0.544, Sample Auroc0.402, Pixel Aupro0.546
+epoch [33/200], loss:3896298351888145120755712.0000
+Pixel Auroc:0.530, Sample Auroc0.456, Pixel Aupro0.543
+epoch [34/200], loss:3850228110642775333011456.0000
+Pixel Auroc:0.521, Sample Auroc0.481, Pixel Aupro0.539
+epoch [35/200], loss:3797326090456294871793664.0000
+Pixel Auroc:0.545, Sample Auroc0.529, Pixel Aupro0.566
+epoch [36/200], loss:3764386568303684693786624.0000
+Pixel Auroc:0.540, Sample Auroc0.573, Pixel Aupro0.567
+epoch [37/200], loss:3763359817321799810547712.0000
+Pixel Auroc:0.537, Sample Auroc0.470, Pixel Aupro0.543
+epoch [38/200], loss:3717607460089560203001856.0000
+Pixel Auroc:0.465, Sample Auroc0.661, Pixel Aupro0.495
+epoch [39/200], loss:3721329130996698970062848.0000
+Pixel Auroc:0.523, Sample Auroc0.296, Pixel Aupro0.542

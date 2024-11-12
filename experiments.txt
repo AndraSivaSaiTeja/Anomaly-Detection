@@ -1,0 +1,71 @@
+exp1) Training only m1,m2,m3 with batchnorm on first and final layers in m1,m2,m3
+(training snr=(-5,30),testing snr=15,bottle,3000 images,lr=1e-2,
+applied transform_norm(normalization) for training non-noisy images,training noisy images and testing noisy images,MSELoss,CutPaste3Way)
+(0.501(1/200)---->0.472(11/200))
+
+removed transform_norm for noisy_images during train and test
+(0.504-->0.47-7 epochs)
+
+applied transform_norm for noisy_images during test only, noy during train
+(0.443-->0.414-->0.514-10 epochs)
+
+removed batchnorm at first layer and applied transform_norm(normalization) for training non-noisy images
+,training noisy images and testing noisy images
+(0.489-->0.387-4 epochs)
+same with lr=1e-3 (0.61-0.382 13 epochs)
+
+used batchnorm for all encoders in m1,m2,m3 and removed batchnorm at first layer
+-ve results
+
+used batchnorm for all encoders in m1,m2,m3 and used 1-cosine sim. loss function and removed batchnorm at first layer
+result: fluctuating loss
+
+used batchnorm only at final layer in m1,m2,m3 and used 1-cosine sim. loss and removed batchnorm at first layer
+result: decreasing roc/fluctuating
+
+used batchnorm at first and final layers in m1,m2,m3 and used 1-cosine loss
+result: (0.57-0.485 18 epochs)
+
+used batchnorm at first and final layers and mse loss
+result:-ve
+
+used other normalization technique(norm_img) for noisy images (both train and test) with eps=0.001(took 1000 bottle images)
+&used batchnorm at first and final layers and mse loss------this is above
+result:0.69-->0.598 5 epochs
+for above added m0 also
+result:0.773-->0.725(7 epochs but fluctuating)
+for above added m0 and removed first batchnorm layer in m0,m1,m2,m3
+result:0.767-->0.645(9 epochs)
+for above added m0 and put first batchnorm layer in m0,m1,m2,m3 ,changed eps to 0.1
+result:(0.767-->0.743)10 epochs
+for above added m0 and put first batchnorm layer in m0,m1,m2,m3 ,changed eps to 0.1, and taken 3000 images
+result:(0.759-->0.581) 7 epochs
+for above added m0, took 1000 images, eps=0.5,lr=0.005----> e1
+(0.762-->0.630 7-epochs)
+
+
+
+Claim: over fitting , so use weight decay
+
+for e1 - add weight decay=0.01
+(0.743-->0.253 12 epochs)
+for e1- add weight decay=0.001
+(-ve)
+for e1 - put weight decay=0
+(0.762-0.291)22 epochs
+(weight decay didn't work)
+training snr=(10,30) - 0.753 to 0.485 in 6 epochs
+
+removed first and final batcnorm from m0(since optput should be rgb image) and m1,m2,m3 modules are also removed completely
+result: completely fluctuating loss
+
+removed m0, first batchnorm for m1,m2,m3, used norm_img with eps=0.01 for noisy_images both during training and testing,
+train snr=(-5,30),test snr=15,lr=1e-3
+result:0.656-->0.434 63 epochs
+added m0 again and only added noise only to even batches
+result: 0.689-0.679 6 epochs, fluctuating
+same but reduced batchsize to 16(previously 32)
+result: 0.745 started but reducing roc
+
+overfitting: reason might be - same artificial anomalies for all epochs
+exp2) 
